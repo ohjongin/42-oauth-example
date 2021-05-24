@@ -1,0 +1,9 @@
+<%- include('./header.ejs') %>
+<% if (!user) { %>
+    <p>Welcome! Please <a href="/auth/login">log in.</a></p>
+<% } else { %>
+    <p>Hello, <a href="<%= user.profileUrl %>"><%= user.displayName %>!</a> |
+        <a href="/auth/logout">Log Out</a>
+    </p>
+<% } %>
+<%- include('./footer.ejs') %>

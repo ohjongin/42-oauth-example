@@ -1,0 +1,9 @@
+<%- include('./header.ejs') %>
+<a href="/auth/42" onclick="showLoading()">Log In with 42</a>
+<div id="loading" hidden><img src="/images/puff.svg"></div>
+<script>
+  function showLoading() {
+    document.getElementById('loading').hidden = false;
+  }
+</script>
+<%- include('./footer.ejs') %>

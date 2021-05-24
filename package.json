@@ -1,0 +1,45 @@
+{
+  "name": "sb-slack-api",
+  "version": "1.00.00",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production pm2 start pm2.json",
+    "production": "NODE_ENV=production pm2 start pm2.json",
+    "develop": "NODE_ENV=development pm2 start pm2.json",
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha 'route/**/*.spec.js' --recursive --timeout 10000 --exit -w",
+    "stop": "pm2 delete livere-media-api",
+    "doc": "apidoc -i src -o doc && node doc-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^5.0.2",
+    "app-root-path": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.2",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.2.0",
+    "fs-extra": "^8.1.0",
+    "http-errors": "latest",
+    "moment": "^2.24.0",
+    "passport": "^0.4.1",
+    "passport-42": "^1.2.6",
+    "request": "^2.88.0",
+    "tracer": "^1.0.1",
+    "url-parse": "^1.4.7",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "supertest": "^4.0.2"
+  }
+}

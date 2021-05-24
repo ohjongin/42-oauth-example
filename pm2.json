@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "42-oauth-example",
+            "script": "./src/app.js",
+            "exec_mode": "fork"
+        }
+    ]
+}
