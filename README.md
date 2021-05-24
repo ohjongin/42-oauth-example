@@ -25,6 +25,7 @@
 CLIENT_ID=xxxxxxebdabbd8849d73d8f541780d0946620fccxxxxxxxx 
 CLIENT_SECRET=xxxxxxxcd6e42d7a37a305d98b068441d96cb5edf8e2d4247c5xxxxxxx
 ```
+
 - APP 설정 화면에서 `REDIRECT URI` 값을 `.env.${ENV_NAME}` 의 `CALLBACK_URL` 값으로 설정
   - `REDIRECT URI` 값과 `CALLBACK_URL` 값이 정확하게 일치하지 않으면 OAuth 인증 과정에서 Invalid URI 오류가 발생
 ```bash
